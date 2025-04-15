@@ -1,89 +1,68 @@
+import Pedido from "./Pedido"
+
 const App = () => {
   return (
     <div className="container border border-dark">
-
       <div className="row">
         <div className="col-12">
           <div>
             <p>Meu hipo</p>
             <i className="fa-solid fa-hippo fa-3x"></i>
+            <i className="ms-1 fa-solid fa-hippo fa-3x fa-flip-horizontal"></i>
           </div>
         </div>
 
         <div className="row">
           <div className="col-sm-12 col-lg-3 col-md-6">
-            <div className="card">
-              <div className="card-header">22/04/2024</div>
-              <div className="card-body d-flex">
-                <div className="d-flex align-items-center"><i className="fa-solid fa-mug-hot fa-2x"></i></div>
-              </div>
-
-              <div className="ms-3 border border-danger flex-grow-1">
-                <h4 className="text-center">Café quente</h4>
-                <p className="text-center">Café expresso com açúcar R$ 7,90</p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div className="col-sm-12 col-lg-3 col-md-6">
-            <div className="card">
-              <div className="card-header">22/04/2024</div>
-              <div className="card-body d-flex">
-                <div className="d-flex align-items-center"><i className="fa-solid fa-cookie fa-2x"></i></div>
-              </div>
-
-              <div className="ms-3 border border-danger flex-grow-1">
-                <h4 className="text-center">Biscoito</h4>
-                <p className="text-center">Café expresso com açúcar R$ 7,90</p>
-              </div>
-            </div>
+            <Pedido
+            data="14/04/2025"
+            titulo="Cookie"
+            descricao="Cookie suculento"
+            ícone="cookie"
+            />
+            
           </div>
 
           <div className="col-sm-12 col-lg-3 col-md-6">
-            <div className="card">
-              <div className="card-header">22/04/2024</div>
-              <div className="card-body d-flex">
-                <div className="d-flex align-items-center"><i className="fa-solid fa-car fa-2x"></i></div>
-              </div>
+            <Pedido
+            data="14/04/2025"
+            titulo="Cookie"
+            descricao="Cookie suculento"
+            ícone="cookie"            
+            />
 
-              <div className="ms-3 border border-danger flex-grow-1">
-                <h4 className="text-center">Peixe</h4>
-                <p className="text-center">Café expresso com açúcar R$ 7,90</p>
-              </div>
-            </div>
           </div>
 
           <div className="col-sm-12 col-lg-3 col-md-6">
-            <div className="card">
-              <div className="card-header">22/04/2024</div>
-              <div className="card-body d-flex">
-                <div className="d-flex align-items-center"><i className="fa-solid fa-mug-saucer fa-2x"></i></div>
-              </div>
+            <Pedido
+            data="14/04/2025"
+            titulo="Cookie"
+            descricao="Cookie suculento"
+            ícone="cookie"            
+            />
 
-              <div className="ms-3 border border-danger flex-grow-1">
-                <h4 className="text-center">Café frio</h4>
-                <p className="text-center">Café expresso com açúcar R$ 7,90</p>
-              </div>
-            </div>
           </div>
 
           <div className="col-sm-12 col-lg-3 col-md-6">
-            <div className="card">
-              <div className="card-header">22/04/2024</div>
-              <div className="card-body d-flex">
-                <div className="d-flex align-items-center"><i className="fa-solid fa-lemon fa-2x"></i></div>
-              </div>
+            <Pedido
+            data="14/04/2025"
+            titulo="Cookie"
+            descricao="Cookie suculento"
+            ícone="cookie"            
+            />
 
-              <div className="ms-3 border border-danger flex-grow-1">
-                <h4 className="text-center">Limão</h4>
-                <p className="text-center">Café expresso com açúcar R$ 7,90</p>
-              </div>
-            </div>
+          </div>
+
+          <div className="col-sm-12 col-lg-3 col-md-6">
+            <Pedido
+            data="14/04/2025"
+            titulo="Cookie"
+            descricao="Cookie suculento"
+            ícone="cookie"            
+            />
+"
           </div>
         </div>
-
       </div>
 
     </div>

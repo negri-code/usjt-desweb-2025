@@ -2,19 +2,27 @@
 
 import React from 'react'
 
-const Pedido = () => {
+const Pedido = (props) => {
     return (
         <div className="card">
-            <div className="card-header">22/04/2024</div>
-            <div className="card-body d-flex">
-                <div className="d-flex align-items-center"><i className="fa-solid fa-fish fa-2x"></i></div>
-            </div>
-
-            <div className="ms-3 border border-danger flex-grow-1">
-                <h4 className="text-center">Peixe</h4>
-                <p className="text-center">Café expresso com açúcar R$ 7,90</p>
+            <div className="card-header">
+            {props.data}
+            </div>                        
+        <div className="card-body d-flex">
+            <div className="d-flex align-items-center">
+             <i className={'fa-solid fa-${props.icone} fa-2x'}></i>
+            </div>           
+            <div className="ms-3 border border-danger flex-grow-1">                
+            <h4 className="text-center">
+            {props.titulo}
+            </h4>
+            <p className="text-center">
+            {props.descricao}
+            </p>
+            
             </div>
         </div>
+    </div>
     )
 }
 
