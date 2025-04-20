@@ -18,7 +18,7 @@ const App = () => {
             data="14/04/2025"
             titulo="Cookie"
             descricao="Cookie suculento"
-            ícone="cookie"
+            icone="cookie"
             />
             
           </div>
@@ -26,9 +26,9 @@ const App = () => {
           <div className="col-sm-12 col-lg-3 col-md-6">
             <Pedido
             data="14/04/2025"
-            titulo="Cookie"
-            descricao="Cookie suculento"
-            ícone="cookie"            
+            titulo="Sorvete"
+            descricao="Sorvete cremoso"
+            icone="ice-cream"            
             />
 
           </div>
@@ -36,9 +36,9 @@ const App = () => {
           <div className="col-sm-12 col-lg-3 col-md-6">
             <Pedido
             data="14/04/2025"
-            titulo="Cookie"
-            descricao="Cookie suculento"
-            ícone="cookie"            
+            titulo="Lanche"
+            descricao="Hambúrguer Artesanal"
+            icone="burger"            
             />
 
           </div>
@@ -46,9 +46,9 @@ const App = () => {
           <div className="col-sm-12 col-lg-3 col-md-6">
             <Pedido
             data="14/04/2025"
-            titulo="Cookie"
-            descricao="Cookie suculento"
-            ícone="cookie"            
+            titulo="Cappucino"
+            descricao="Alpino quentinho"
+            icone="mug-hot"            
             />
 
           </div>
@@ -56,9 +56,9 @@ const App = () => {
           <div className="col-sm-12 col-lg-3 col-md-6">
             <Pedido
             data="14/04/2025"
-            titulo="Cookie"
-            descricao="Cookie suculento"
-            ícone="cookie"            
+            titulo="Drink"
+            descricao="Vinho branco"
+            icone="wine-glass"            
             />
 "
           </div>

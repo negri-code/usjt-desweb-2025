@@ -10,7 +10,7 @@ const Pedido = (props) => {
             </div>                        
         <div className="card-body d-flex">
             <div className="d-flex align-items-center">
-             <i className={'fa-solid fa-${props.icone} fa-2x'}></i>
+             <i className={`fa-solid fa-${props.icone} fa-2x`}></i>
             </div>           
             <div className="ms-3 border border-danger flex-grow-1">                
             <h4 className="text-center">
