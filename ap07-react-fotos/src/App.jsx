@@ -4,8 +4,19 @@ import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 import 'primereact/resources/themes/bootstrap4-light-purple/theme.css'
 import Busca from './components/Busca'
+import {createClient} from 'pexels'
 
 class App extends Component {
+    pexelsClient = null
+    componentDidMount() {
+        this.pexelsClient = createClient(
+            'fGxtMhaf6jCYf3UYHBHhJJjHczpwGchoCed8wQcdly5r3fKTzTqhvWjM'
+        )
+    }
+    onBuscaRealizada = (termo) => {
+        this.pexelsClient.photos.search({query: termo})
+        .then((result) => console.log(result))
+    }
     render(){
         return(
             <div className="grid justify-content-center m-auto w-9 border-round border-1 border-400">
@@ -13,7 +24,8 @@ class App extends Component {
                     <h1>Exibir uma lista de...</h1>
                 </div>
                 <div className="col-8">
-                    <Busca />
+                    <Busca 
+                    onBuscaRealizada={this.onBuscaRealizada}/>
                 </div>
             </div>
         )
