@@ -19,7 +19,7 @@ export default class Busca extends Component {
     render() {
         return(
             <form onSubmit={this.onFormSubmit}>
-            //empilhando os filhos
+            {/*empilhando os filhos*/}
             <div className="flex flex-column">
                 {/*ícone à esquerda, largura máxima*/}
                 <IconField iconPosition='left'>

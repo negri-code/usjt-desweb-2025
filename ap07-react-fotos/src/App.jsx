@@ -7,15 +7,18 @@ import Busca from './components/Busca'
 import {createClient} from 'pexels'
 
 class App extends Component {
+
+    state = {pics: []}
     pexelsClient = null
+    pexelsKey = import.meta.env.VITE_API_KEY
     componentDidMount() {
         this.pexelsClient = createClient(
-            'fGxtMhaf6jCYf3UYHBHhJJjHczpwGchoCed8wQcdly5r3fKTzTqhvWjM'
+            this.pexelsKey
         )
     }
     onBuscaRealizada = (termo) => {
         this.pexelsClient.photos.search({query: termo})
-        .then((result) => console.log(result))
+        .then((result) => this.setState({pics: result.photos}))
     }
     render(){
         return(
@@ -26,6 +29,15 @@ class App extends Component {
                 <div className="col-8">
                     <Busca 
                     onBuscaRealizada={this.onBuscaRealizada}/>
+                </div>
+                <div className="col-8">
+                    {
+                this.state.pics.map ((pic, key) => (
+                    <div key={key}>
+                        <img src={pic.src.small}/>
+                    </div>
+                     ))
+                    }
                 </div>
             </div>
         )
