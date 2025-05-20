@@ -1,6 +1,6 @@
-const Imagem = ({pic}) => {
+const Imagem = ({pic, imgStyle}) => {
     return(
-        <div>
+        <div className={`${imgStyle}`}>
             <img src={pic}/>
         </div>
         )
